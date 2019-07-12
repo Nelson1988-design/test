@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" ng-app="ModuloEjercicio1">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js">
+    </script>
+      <script type="text/javascript" src="ejercicio_1.js"></script>
+    <meta charset="utf-8">
+    <style media="screen">
+      li{
+        list-style: none;
+      }
+      div{
+        border: 1px solid black;
+      }
+    </style>
+    <title>Ejercicio práctico AngularJS</title>
+  </head>
+  <body ng-controller="CtrlEjercicio1">
+    <label for="friends">I have 10 friends. They are: </label>
+    <input type="text" name="friends" ng-model="nombre" placeholder="Filter friends...">
+    <div>
+      <ul>
+        <li ng-repeat="friend in lista | filter:nombre">
+          {{"["+friend.num+"] "}}{{friend.nombre | uppercase}}{{" who is "+friend.edad+" years old"}}
+        </li>
+      </ul>
+    </div>
+
+
+
+
+  </body>
+</html>
