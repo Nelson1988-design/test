@@ -2,12 +2,12 @@ var modulo = angular.module("ModuloEjercicio1",[]);
 modulo.controller("CtrlEjercicio1", function($scope){
   $scope.num = 0;
   $scope.lista = [{
-    num : 10,
+    num : 1,
     nombre : "John",
     edad : 25
   },
   {
-    num : 20,
+    num : 2,
     nombre : "Jessie",
     edad : 30
   },
